@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\UserController;
 use App\Models\User;
 
 Route::get('/', function () {
@@ -17,3 +18,9 @@ Route::get('/departamentu', [PageController::class, 'departamentu'])->name('depa
 Route::get('/lisensa',[PageController::class, 'lisensa'])->name('lisensa');
 Route::get('/salariu',[PageController::class, 'salariu'])->name('salariu');
 
+Route::get('/login',[UserController::class, 'login'])->name('login');
+
+// //View ba login
+// Route::view('/login', 'login')->name('login');
+// //Route ba login
+// Route::post('/login', [UserController::class, 'loginPost'])->name('actionLogin');

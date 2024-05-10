@@ -22,6 +22,7 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
+              
                 <h1>DataTables</h1>
               </div>
               <div class="col-sm-6">
@@ -43,9 +44,12 @@
                   <div class="card-header">
                     <h3 class="card-title">DataTable with default features</h3>
                   </div>
+                  <div class="col">
+                    <a class="btn btn-primary mt-3" href="">Aumenta (+)</a>
+                   </div>
                   <!-- /.card-header -->
                   <div class="card-body">
-                    <table id="example1" class="table table-bordered table-striped">
+                    <table id="example1" class="table table-bordered table-striped"
                       <thead>
                       <tr>
                         <th>Rendering engine</th>

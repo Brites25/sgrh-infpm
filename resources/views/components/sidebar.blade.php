@@ -33,23 +33,36 @@
               </li>  
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-chart-pie"></i>
+                  <i class="nav-icon fas fa-users"></i>
                   <p>
                     Funsionariu
                     <i class="right fas fa-angle-left"></i>
                   </p>
                 </a>
+              
                 <ul class="nav nav-treeview">
-                  <li class="nav-item">
+                  <li class style="margin-left: 15px">
                     <a href="{{ route('permanente') }}" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Permanente</p>
+                      <i class="nav-icon fas fa-user"></i>
+                      <p>Central</p>
                     </a>
                   </li>
-                  <li class="nav-item">
+                  <li class="ml-3">
                     <a href="{{ route('kontratadu') }}" class="nav-link">
-                      <i class="far fa-circle nav-icon"></i>
-                      <p>Kontratadu</p>
+                      <i class="nav-icon fas fa-user"></i>
+                      <p>Regional Ainaro</p>
+                    </a>
+                  </li>
+                  <li class="ml-3">
+                    <a href="{{ route('kontratadu') }}" class="nav-link">
+                      <i class="nav-icon fas fa-user"></i>
+                      <p>Regional Baucau</p>
+                    </a>
+                  </li>
+                  <li class="ml-3">
+                    <a href="{{ route('kontratadu') }}" class="nav-link">
+                      <i class="nav-icon fas fa-user"></i>
+                      <p>Regional Bobonaro</p>
                     </a>
                   </li>
                 </ul>
@@ -63,28 +76,28 @@
               </li>  
                 <li class="nav-item">
                   <a href="{{ route('diresaun') }}" class="nav-link">
-                    <i class="nav-icon fas fa-copy"></i>
+                    <i class="nav-icon fas fa-layer-group"></i>
                     <p>Diresaun
                     </p>
                   </a>
                 </li>  
               <li class="nav-item">
                 <a href="{{ route('departamento') }}" class="nav-link">
-                  <i class="nav-icon fas fa-copy"></i>
+                  <i class="nav-icon fas fa-layer-group"></i>
                   <p>Departamentu
                   </p>
                 </a>
               </li>
               <li class="nav-item">
                 <a href="{{ route('lisensa') }}" class="nav-link">
-                  <i class="nav-icon fas fa-copy"></i>
+                  <i class="nav-icon fas fa-building"></i>
                   <p>Lisensa
                   </p>
                 </a>
               </li>    
               <li class="nav-item">
                 <a href="{{ route('salariu') }}" class="nav-link">
-                  <i class="nav-icon fas fa-copy"></i>
+                  <i class="nav-icon fas fa-dollar-sign"></i>
                   <p>Salariu
                   </p>
                 </a>
