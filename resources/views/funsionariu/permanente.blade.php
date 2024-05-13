@@ -5,8 +5,6 @@
     Permanente
 @endsection
 
-
-
 @section('konteudu')
    
 <body class="hold-transition sidebar-mini layout-fixed">

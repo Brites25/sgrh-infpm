@@ -5,7 +5,7 @@
 @endsection
 
 @section ('konteudu')
-<<section class="vh-100" style="background-color: #2B6224;">
+<section class="vh-100" style="background-color: #2B6224;">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-12 col-md-8 col-lg-4 col-xl-3">
@@ -14,7 +14,7 @@
               <div class="card shadow-1-strong" style="border-radius: 1rem;">
            
                 <div class="mt-2 image text-center">
-                    <img src="dist/img/sdsdsdsdsds.png" class="img-fluid" alt="User Image" style="width: 100px; height: 100px; display: inline-block;">
+                    <img src="dist/img/sdsdsdsdsds.png" class="img-fluid" alt="User Image" style="width: 100px; height: 60px; display: inline-block;">
                 </div>
 
                 <div class="card-body p-5 text-center">

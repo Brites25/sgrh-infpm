@@ -13,8 +13,6 @@
     @include('components.navbar')
     @include('components.sidebar')
 
-
-
 <!-- Main content -->
 <section class="content">
 

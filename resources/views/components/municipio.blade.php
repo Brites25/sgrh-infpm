@@ -2,7 +2,7 @@
 
 
 @section('titulu')
-    Salariu
+    Municipio
 @endsection
 
 
