@@ -68,8 +68,8 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a href="{{ route('municipio') }}" class="nav-link">
-                  <i class="nav-icon fas fa-copy"></i>
+                <a href="{{ route('municipio.index') }}" class="nav-link">
+                  <i class="nav-icon fas fa-city"></i>
                   <p>Municipio
                   </p>
                 </a>
