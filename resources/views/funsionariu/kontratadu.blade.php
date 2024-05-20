@@ -53,7 +53,17 @@
                         <th>Platform(s)</th>
                         <th>Engine version</th>
                         <th>CSS grade</th>
+                        <th>Asaun</th>
                       </tr>
+                      <td><a class="btn btn-warning bx bx-edit" href=""> Edit</a>
+                        <form action="" method="POST" style="display: inline-block;">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger bx bx-x-circle" onclick="return confirm_delete()">Apaga</button>
+                            <a href=products.show" class="btn btn-sm btn-dark bx bx-show">show</a>
+
+                         </td>    
+                        </form> 
                       </thead>
                       <tbody>
                       <tr>

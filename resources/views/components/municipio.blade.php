@@ -23,7 +23,9 @@
           <div class="container-fluid">
             <div class="row mb-2">
               <div class="col-sm-6">
-                <h1>Dadus Munisipiu</h1>
+
+              <h1>Dadus Munisipiu</h1>
+
               </div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -44,9 +46,14 @@
                   <div class="card-header">
                     <a href="javascript:void(0)" class="btn btn-primary mb-2" id="btn-create-munisipiu">Aumenta</a>
                   </div>
+                  <div class="col">
+                    <a class="btn btn-primary mt-3" href="">Aumenta (+)</a>
+                   </div>
                   <!-- /.card-header -->
                   <div class="card-body">
-                    <table id="tabela-mun" class="table table-bordered table-striped">
+
+                  <table id="tabela-mun" class="table table-bordered table-striped">
+
                       <thead>
                       <tr>
                         <th>ID</th>
