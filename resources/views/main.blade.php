@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
   <link rel="sortcut icon" type="x-icon" href="dist/img/sdsdsdsdsds.png">
   <title>@yield('titulu')</title>
 
@@ -37,14 +38,15 @@
 
 @yield('konteudu')
 
+
  <!-- /.content-wrapper -->
  <footer class="main-footer">
-    <strong>Copyright &copy; 2024-2025 <a href="https://adminlte.io">Engenharia Informatica UNTL</a>.</strong>
-    All rights reserved.
-    <div class="float-right d-none d-sm-inline-block">
-      <b>Version</b> 3.1.0
-    </div>
-  </footer>
+  <strong>Copyright &copy; 2024-2025 <a href="https://adminlte.io">Engenharia Informatica UNTL</a>.</strong>
+  All rights reserved.
+  <div class="float-right d-none d-sm-inline-block">
+    <b>Version</b> 3.1.0
+  </div>
+</footer>
 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
