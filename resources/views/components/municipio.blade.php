@@ -46,9 +46,6 @@
                   <div class="card-header">
                     <a href="javascript:void(0)" class="btn btn-primary mb-2" id="btn-create-munisipiu">Aumenta</a>
                   </div>
-                  <div class="col">
-                    <a class="btn btn-primary mt-3" href="">Aumenta (+)</a>
-                   </div>
                   <!-- /.card-header -->
                   <div class="card-body">
 
