@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('departamentu', function (Blueprint $table) {
             $table->id('id_departamentu');
-            $table->id('id_diresaun',);
+            $table->foreignId('id_diresaun')->references('id_diresaun')->on('diresaun')->onDelete('Cascade')->onUpdate('Cascade');
             $table->string('naran_departamentu', 100);
             $table->timestamps();
         });

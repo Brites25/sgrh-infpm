@@ -53,7 +53,7 @@
 
                       <thead>
                       <tr>
-                        <th>ID</th>
+                        <th>No</th>
                         <th>Naran Munisipiu</th>
                         <th>Asaun</th>
                       </tr>
@@ -111,7 +111,16 @@
   search();
   function search(){
        var keyword = $('#search').val();
-       $.post('{{ route("munisipiu.search") }}',
+       
+       //if the keyword is empty cache the inital table data and return it if keyword is empty
+        if(keyword === ''){
+            $.get('{{ route("municipio.index") }}', function(data){
+                table_post_row(data);
+            });
+            return;
+        }
+
+       $.post('{{ route("municipio.search") }}',
         {
            _token: $('meta[name="csrf-token"]').attr('content'),
            keyword:keyword
@@ -124,20 +133,20 @@
   // table row with ajax
   function table_post_row(res){
   let htmlView = '';
-  if(res.munisipiu.length <= 0){
+  if(res.munisipiu_data.length <= 0){
       htmlView+= `
          <tr>
             <td colspan="4">Dadus La existe.</td>
         </tr>`;
   }
-  for(let i = 0; i < res.munisipiu.length; i++){
+  for(let i = 0; i < res.munisipiu_data.length; i++){
       htmlView += `
           <tr>
              <td>`+ (i+1) +`</td>
-                <td>`+res.munisipiu[i].naran_munisipiu+`</td>
+                <td>`+res.munisipiu_data[i].naran_munisipiu+`</td>
                 <td class="text-center">
-                    <a href="javascript:void(0)" id="btn-edit-munisipiu" data-id="`+res.munisipiu[i].id_munisipiu+`" class="btn btn-warning btn-sm">EDIT</a>
-                    <a href="javascript:void(0)" id="btn-delete-munisipiu" data-id="`+res.munisipiu[i].id_munisipiu+`" class="btn btn-danger btn-sm">DELETE</a>
+                    <a href="javascript:void(0)" id="btn-edit-munisipiu" data-id="`+res.munisipiu_data[i].id_munisipiu+`" class="btn btn-warning btn-sm">EDIT</a>
+                    <a href="javascript:void(0)" id="btn-delete-munisipiu" data-id="`+res.munisipiu_data[i].id_munisipiu+`" class="btn btn-danger btn-sm">DELETE</a>
           </tr>`;
   }
        $('tbody').html(htmlView);

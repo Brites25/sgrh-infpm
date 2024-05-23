@@ -15,6 +15,7 @@ return new class extends Migration
         Schema::create('munisipiu', function (Blueprint $table) {
             $table->bigInteger('id_munisipiu')->primary()->nullable(false)->autoIncrement();
             $table->string('naran_munisipiu', 100)->nullable(false);
+            $table->timestamps();
         });
     }
 

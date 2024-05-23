@@ -51,7 +51,7 @@ class MunisipiuController extends Controller
      * @param  mixed $munisipiu
      * @return void
      */
-    public function show($id): JsonResponse
+    public function show(int $id): JsonResponse
     {
         $munisipiu = Munisipiu::find($id);
 
@@ -62,7 +62,7 @@ class MunisipiuController extends Controller
         ]);
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request, int $id)
     {
         $validator  =  Validator::make($request->all(), [
             'naran_munisipiu' => 'required',
@@ -83,7 +83,7 @@ class MunisipiuController extends Controller
         ]);
     }
 
-    public function destroy($id)
+    public function destroy(int $id)
     {
         $munisipiu = Munisipiu::find($id);
         $munisipiu->delete();
@@ -96,12 +96,13 @@ class MunisipiuController extends Controller
 
     public function showMunisipiu(Request $request)
     {
-        $munisipiu = Munisipiu::all();
+
         if ($request->keyword != '') {
             $munisipiu = Munisipiu::where('naran_munisipiu', 'LIKE', '%' . $request->keyword . '%')->get();
+
+            return response()->json([
+                'munisipiu_data' => $munisipiu
+            ]);
         }
-        return response()->json([
-            'munisipiu' => $munisipiu
-        ]);
     }
 }
