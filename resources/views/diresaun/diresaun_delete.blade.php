@@ -1,8 +1,8 @@
 <script>
     //button create post event
-    $('body').on('click', '#btn-delete-munisipiu', function () {
+    $('body').on('click', '#btn-delete-diresaun', function () {
 
-        let munisipiu_id = $(this).data('id');
+        let diresaun_id = $(this).data('id');
         let token   = $("meta[name='csrf-token']").attr("content");
 
         Swal.fire({
@@ -17,7 +17,7 @@
 
                 //fetch to delete data
                 $.ajax({
-                    url: `/municipio/${munisipiu_id}`,
+                    url: `/diresaun/${diresaun_id}`,
                     type: "DELETE",
                     cache: false,
                     data: {
@@ -35,7 +35,7 @@
                         });
 
                         //remove post on table
-                        $(`#index_${munisipiu_id}`).remove();
+                        $(`#index_${diresaun_id}`).remove();
                     }
                 });
                  //refresh table after search action delete 
